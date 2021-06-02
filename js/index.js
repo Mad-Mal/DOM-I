@@ -43,8 +43,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //navbar and anchors
 
-const navBar = document.getElementsByTagName('nav')
-const navAnchors = navBar.getElementsByTagName('a')
+//selectors
+
+const navBarContainer = document.querySelector('nav')
+const navBar = navBarContainer.children
+
+//changes
+
+navBar[0].textContent = 'Services';
+navBar[1].textContent = 'Products';
+navBar[2].textContent = 'Vision';
+navBar[3].textContent = 'Features';
+navBar[4].textContent = 'About';
+navBar[5].textContent = 'Contact';
 
 //h1 w/ button and circle img
 
